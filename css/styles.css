@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'Press Start 2P', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+}
+
+html, body {
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/60/49/46586cbb9f19479.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.container {
+	width: 100%;
+	height: 80vh;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+	margin-top: 60px;
+}
+
+.container canvas {
+	display: block;
+}
+
+.cerrar {
+	background-color: red;
+	padding: 8px 12px;
+	color: white;
+	border-radius: 50%;
+	font-family: arial;
+	border: white solid 2px;
+	text-decoration: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: none;
+}
+
+.cerrarMode {
+	background-color: red;
+	padding: 8px 12px;
+	color: white;
+	border-radius: 50%;
+	font-family: arial;
+	border: white solid 2px;
+	text-decoration: none;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	display: none;
+}
+
+.cerrar:hover {
+	background-color: #b70000;
+}
+
+.instrucciones {
+	position: absolute;
+	width: 350px;
+	height: 250px;
+	background: url('../imagenes/instrucciones.jpg');
+	background-size: cover;
+	border-radius: 16px;
+	top: 250px;
+	left: 500px;
+	border: 2px solid white;
+	display: none;
+}
+
+.links a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Press Start 2P', cursive; 
+}
+
+#resultados {
+	position: absolute;
+	top: 110px;
+	right: 400px;
+}
+
+.mode {
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	font-size: 36px;
+	width: 100%;
+	height: 110vh;
+	position: absolute;
+	top: -20px;
+	z-index: 55;
+	display: none;
+}
+
+.mode ul {
+	list-style: none;
+}
+
+.mode ul li:first-child {
+	margin-top: 170px;
+	padding: 25px 0;
+}
+
+.mode ul li {
+	padding: 25px 0;
+}
+
+.mode a {
+	text-decoration: none;
+	color: white;
+}
+
+#mode {
+	position: absolute;
+	top: 110px;
+	left: 400px;
+}
+
+#canvas{
+	margin: -25px auto;
+	background: url('../imagenes/background.jpg');
+	border: 20px solid white;	
+}
+
+figure {
+	position: relative;
+}
+
+figure #logo {
+	position: absolute;
+	top: 80px;
+	left: 460px;
+	transform: scale(1.2);
+}
+
+figure #gameover {
+	position: absolute;
+	top: 100px;
+	left: 450px;
+	width: 30%;
+	display: none;
+}
+
+.botones {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+button {
+	position: absolute;
+	padding: 25px 65px;
+	color: white;
+	border: none;
+	font-size: 28px;
+}
+
+#restart {
+	top: 380px;
+	left:510px;
+	background-color: green;
+	border: 2px solid white;
+	display: none;
+	cursor: pointer;
+}
+
+#start {
+	top: 310px;
+	left:490px;
+	background-color: green;
+	border: 2px solid white;
+	cursor: pointer;
+	font-family: 'Press Start 2P', cursive;
+}
+
+#start:hover, #restart:hover {
+	background-color: #1f6b0a;
+}
+
+#instrucciones {
+	padding: 15px 45px;
+	font-size: 20px;
+	top: 410px;
+	left:493px;
+	background-color: blue;
+	border: 2px solid white;
+	cursor: pointer;
+	font-family: 'Press Start 2P', cursive;
+}
+
+#instrucciones:hover {
+	background-color: #001951;
+}
+
+#mensaje {
+	font-family: 'Press Start 2P', cursive;
+	position: absolute;
+	font-size: 20px;
+	top: 380px;
+	left: 460px;
+	color: white;
+}
+
+
+
+
+
+
+
+/*==============================
+		PANTALLA VERTICAL
+==============================*/
+
+#vertical {
+	display: none;
+}
+
+@media all and (orientation: portrait) {
+	
+	.container {
+		display: none;
+	}
+
+	#vertical {
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		z-index: 1;
+		background: url(../imagenes/vertical.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PROYECTO 1 - TANK WARS </title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="vertical"></div>
+
+<div class="container">
+	<figure>
+		<img id="logo" src="imagenes/logo.png" alt="Logo Tank Wars">
+	</figure>
+
+	<p id="mensaje" style="text-align: center"></p>
+	<figure>
+		<img src="imagenes/gameover.png" alt="game over" id="gameover">
+	</figure>
+	<div class="instrucciones">
+		<a href="#" class="cerrar">X</a>
+	</div>
+	<!-- <div class="mode">
+		<a href="#" class="cerrarMode">X</a>
+		<ul>
+			<li><a href="#" id="facil">Fácil</a></li>
+			<li><a href="#" id="gatopulpo">GatoPulpo</a></li>
+			<li><a href="#" id="bliss">Bliss</a></li>
+		</ul>
+	</div> -->
+	<div class="resultados">
+		<ul>
+			<li></li>
+		</ul>
+	</div>
+	<div class="botones">
+		<button id="start">Comenzar</button>
+		<button id="instrucciones">Instrucciones</button>
+		<button id="restart">Pantalla principal</button>
+	</div>
+	<div class="links">
+		<a href="#" id="resultados">Resultados</a>
+		<!-- <a href="#" id="mode">Modalidad</a> -->
+	</div>
+	<canvas id="canvas" width="700px" height="500px"></canvas>
+
+</div>
+
+<audio id="boing">
+<source src="sonidos/boing.mp3">
+</audio>
+<audio id="tankShoot">
+<source src="sonidos/tankShoot.mp3">
+</audio>
+<audio id="intro" loop>
+<source src="sonidos/warMusic.mp3">
+</audio>
+<audio id="fin">
+<source src="sonidos/gameOver.mp3">
+</audio>
+<audio id="boom">
+<source src="sonidos/boom.mp3">
+</audio>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
+<script src="main.js"></script>
+</body>
+</html>
