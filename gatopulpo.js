@@ -94,12 +94,12 @@ function Tanque(x,y,radio){
 	this.x = x;
 	this.y = y;
 	this.radio = radio;
-	this.escala = 1;
+	this.escala = 1.5;
 	this.rotacion = 0;
 	this.w = 0;
 	this.h = 0;
 	this.dibuja = function(){
-		imagen.src = "imagenes/tanque.png";
+		imagen.src = "imagenes/octocat.png";
 		imagen.onload = function(){
 			this.w = imagen.width;
 			this.h = imagen.height;
@@ -196,13 +196,13 @@ function gameOver(){
 	setTimeout(function() {
 		gameover.style.display = 'block';
 		if(puntos <= 100) {
-			mensaje.innerHTML = "¡Muy mal!<br> Tu puntuación fue de " + puntos;
+			mensaje.innerHTML = "¡Me merezco un GatoPulpo!<br> Tu puntuación fue de " + puntos;
 		} else if(puntos <= 250) {
-			mensaje.innerHTML = "¡Muy bien!<br> Tu puntuación fue de " + puntos;
+			mensaje.innerHTML = "¡Me merezco un GatoPulpo!<br> Tu puntuación fue de " + puntos;
 		} else if(puntos <= 500) {
-			mensaje.innerHTML = "¡Excelente!<br> Tu puntuación fue de " + puntos;
+			mensaje.innerHTML = "¡Me merezco un GatoPulpo!<br> Tu puntuación fue de " + puntos;
 		} else {
-			mensaje.innerHTML = "¡Wow! Eres la mera mata<br> Tu puntuación fue de " + puntos;
+			mensaje.innerHTML = "¡Me merezco un GatoPulpo! Eres la mera mata<br> Tu puntuación fue de " + puntos;
 		}
 		restart.style.display = 'block';
 		finJuego = true;

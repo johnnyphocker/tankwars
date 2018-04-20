@@ -39,6 +39,7 @@ html, body {
 	top: 10px;
 	right: 10px;
 	display: none;
+	z-index: 56;
 }
 
 .cerrarMode {
@@ -80,8 +81,8 @@ html, body {
 
 #resultados {
 	position: absolute;
-	top: 110px;
-	right: 400px;
+	top: 90px;
+	right: 380px;
 }
 
 .mode {
@@ -134,7 +135,7 @@ figure {
 
 figure #logo {
 	position: absolute;
-	top: 80px;
+	top: 60px;
 	left: 460px;
 	transform: scale(1.2);
 }
@@ -202,11 +203,85 @@ button {
 	font-family: 'Press Start 2P', cursive;
 	position: absolute;
 	font-size: 20px;
-	top: 380px;
+	top: 330px;
 	left: 460px;
 	color: white;
 }
 
+.aceptar {
+	display: none;
+}
+
+.resultados {
+	width: 100%;
+	height: 100vh;
+	color: white;
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	font-size: 36px;
+	position: absolute;
+	top: 0;
+	z-index: 55;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.resultados ul {
+	list-style: none;
+}
+
+.resultados ul li {
+	padding-top: 35px;
+}
+
+button.aceptar {
+	z-index: 56;
+	position: static;
+	cursor: pointer;
+	background-color: green;
+	margin: 0 auto;
+}
+
+button.aceptar:hover {
+	background-color: #1f6b0a;
+}
+
+.guardar {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	font-size: 36px;
+	position: absolute;
+	top: 0;
+	z-index: 55;
+	background-color: rgba(0,0,0,0.8);
+}
+
+.guardar input {
+	color: white;
+	background-color: rgba(0,0,0,0);
+	border: none;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 35px;
+	margin-top: 250px;
+}
+
+.guardar input[type='text'] {
+	padding: 15px 13px;
+	font-size: 35px;
+	width: 250px;
+}
+
+.guardar button {
+	cursor: pointer;
+	padding: 0;
+	font-family: 'Press Start 2P', cursive;
+	background-color: rgba(0,0,0,0);
+	position: static;
+}
+
+.hide {
+	display: none;
+}
 
 
 

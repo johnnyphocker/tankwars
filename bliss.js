@@ -30,12 +30,11 @@ $(document).ready(function() {
 		$('.aceptar').css('display','block');
 	});
 
-	
 
 
 	$('#restart').click(function() {
 		$('.hide').css('display','inline-block');
-	});
+	})
 
 
 
@@ -68,6 +67,8 @@ var logo = document.querySelector('#logo');
 var mensaje = document.getElementById('mensaje');
 var gameover = document.getElementById('gameover');
 
+var myStorage = window.localStorage;
+
 
 
 
@@ -78,8 +79,8 @@ CLASES
 function Bala(x,y,radianes){
 	this.x = x;
 	this.y = y;
-	this.w = 20;
-	this.speed = 10;
+	this.w = 5;
+	this.speed = 8;
 	this.radianes = radianes;
 	this.dibuja = function(){
 		ctx.save();
@@ -253,6 +254,7 @@ start.addEventListener('click',function() {
 	anima();
 	start.style.display = 'none';
 	logo.style.display = 'none';
+	gameOver();
 });
 
 restart.addEventListener('click',function() {

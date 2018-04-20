@@ -23,7 +23,23 @@ $(document).ready(function() {
 		$('#mode').css('display','none');
 		$('#resultados').css('display','none');
 	});
+	$('#aceptar').click(function() {
+		$('.aceptar').css('display','none');
+	});
+	$('#resultados').click(function() {
+		$('.aceptar').css('display','block');
+	});
+
+
+
+	$('#restart').click(function() {
+		$('.hide').css('display','inline-block');
+	})
+
+
+
 });
+
 
 /***************
 VARIABLES
@@ -50,6 +66,12 @@ var restart = document.getElementById('restart');
 var logo = document.querySelector('#logo');
 var mensaje = document.getElementById('mensaje');
 var gameover = document.getElementById('gameover');
+
+var myStorage = window.localStorage;
+
+
+
+
 
 /**************
 CLASES
@@ -331,6 +353,7 @@ window.onload = function(){
 			centroY = h / 2;
 			imagen = new Image();
 			tanque = new Tanque();
+
 			//mensaje("TANK WARS");
 			//setTimeout(inicio, 3500);
 		} else {
@@ -338,3 +361,6 @@ window.onload = function(){
 		}
 	}
 }
+
+
+
